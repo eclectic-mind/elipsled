@@ -606,9 +606,11 @@ input {
   background-color: $color-input-bg;
   border: solid 1px $color-input-border;
   position: relative;
-  width: 188px;
+  width: 173px;
+  padding: 1px 10px;
 
-  &:focus ~ label {
+  &:focus ~ label,
+  &:valid ~ label {
     opacity: 0;
   }
 }
@@ -634,6 +636,10 @@ button {
   margin-left: -1px;
   transition: all ease 0.2s;
 
+  @media screen and (max-width: 700px) {
+    margin-left: 0;
+  }
+
   &:hover {
     background-color: $color-accent-hover;
   }
@@ -645,6 +651,7 @@ button {
   position: absolute;
   right: 40px;
   margin: 0 0 0 20px;
+  display: block;
 
   @media screen and (min-width: 800px) {
     display: none;

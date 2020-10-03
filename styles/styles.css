@@ -714,10 +714,12 @@ input {
   background-color: #f8f8f8;
   border: solid 1px #e1e1e1;
   position: relative;
-  width: 188px;
+  width: 173px;
+  padding: 1px 10px;
 }
 
-input:focus ~ label {
+input:focus ~ label,
+input:valid ~ label {
   opacity: 0;
 }
 
@@ -745,6 +747,12 @@ button {
   transition: all ease 0.2s;
 }
 
+@media screen and (max-width: 700px) {
+  button {
+    margin-left: 0;
+  }
+}
+
 button:hover {
   background-color: #f47806;
 }
@@ -755,6 +763,7 @@ button:hover {
   position: absolute;
   right: 40px;
   margin: 0 0 0 20px;
+  display: block;
 }
 
 @media screen and (min-width: 800px) {
