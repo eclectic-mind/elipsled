@@ -123,6 +123,8 @@ strong {
 
 figure img {
   max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .wrapped {
@@ -616,7 +618,7 @@ section {
 }
 
 .mobile-menu {
-  display: none;
+  display: block;
   background-color: #ffffff;
   width: 300px;
   border-style: solid;
@@ -629,12 +631,6 @@ section {
   -webkit-transition: all ease 0.2s;
   transition: all ease 0.2s;
   overflow: hidden;
-}
-
-@media screen and (max-width: 600px) {
-  .mobile-menu {
-    display: block;
-  }
 }
 
 .mobile-menu a {
@@ -720,13 +716,12 @@ input:focus ~ label {
 }
 
 label {
-  width: 160px;
+  width: 187px;
   position: relative;
   opacity: 1;
-  margin-left: -188px;
+  margin-left: -187px;
   -webkit-transition: all ease 0.2s;
   transition: all ease 0.2s;
-  padding: 0 20px 0 0;
 }
 
 label span {
@@ -792,6 +787,7 @@ button:hover {
 }
 
 .sandwitch.closing .mid {
+  left: -18px;
   width: 0;
 }
 

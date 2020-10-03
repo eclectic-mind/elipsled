@@ -7,21 +7,20 @@ $color-accent: #fb973b;
 $color-accent-hover: #f47806;
 $color-input-bg: #f8f8f8;
 $color-input-border: #e1e1e1;
-$basic-font-size:24px;
+$basic-font-size: 24px;
 $basic-line-height: 1.5;
-$smaller-font:18px;
-$smaller-line-height:23px;
-$h2-font-size:60px;
+$smaller-font: 18px;
+$smaller-line-height: 23px;
+$h2-font-size: 60px;
 $h2-line-height: 1.2;
-$h2-border-width:10px;
-$partner-logo-width:246px;
-$global-width:1920px;
-$wrapper-width:1250px;
-$content-width:824px;
-$gap:30px;
+$h2-border-width: 10px;
+$partner-logo-width: 246px;
+$global-width: 1920px;
+$wrapper-width: 1250px;
+$content-width: 824px;
+$gap: 30px;
 $numbers-margin: 14px;
 $numbers-height: 21px;
-
 
 * {
   font-family: Calibri, Verdana, Geneva, Tahoma, sans-serif;
@@ -83,11 +82,46 @@ h2 {
     color: $color-title;
     font-size: $h2-font-size;
     background: transparent;
-    background: -moz-linear-gradient(180deg, transparent 66%, $color-accent 67%, $color-accent 79%, transparent 80%, transparent 0%);
-    background: -webkit-linear-gradient(180deg, transparent 66%, $color-accent 67%, $color-accent 79%, transparent 80%, transparent 0%);
-    background: -o-linear-gradient(180deg, transparent 66%, $color-accent 67%, $color-accent 79%, transparent 80%, transparent 0%);
-    background: -ms-linear-gradient(180deg, transparent 66%, $color-accent 67%, $color-accent 79%, transparent 80%, transparent 0%);
-    background: linear-gradient(180deg, transparent 66%, $color-accent 67%, $color-accent 79%, transparent 80%, transparent 0%);
+    background: -moz-linear-gradient(
+      180deg,
+      transparent 66%,
+      $color-accent 67%,
+      $color-accent 79%,
+      transparent 80%,
+      transparent 0%
+    );
+    background: -webkit-linear-gradient(
+      180deg,
+      transparent 66%,
+      $color-accent 67%,
+      $color-accent 79%,
+      transparent 80%,
+      transparent 0%
+    );
+    background: -o-linear-gradient(
+      180deg,
+      transparent 66%,
+      $color-accent 67%,
+      $color-accent 79%,
+      transparent 80%,
+      transparent 0%
+    );
+    background: -ms-linear-gradient(
+      180deg,
+      transparent 66%,
+      $color-accent 67%,
+      $color-accent 79%,
+      transparent 80%,
+      transparent 0%
+    );
+    background: linear-gradient(
+      180deg,
+      transparent 66%,
+      $color-accent 67%,
+      $color-accent 79%,
+      transparent 80%,
+      transparent 0%
+    );
 
     @media screen and (max-width: 800px) {
       font-size: 52px;
@@ -97,7 +131,6 @@ h2 {
       font-size: 44px;
     }
   }
-
 }
 
 p {
@@ -131,6 +164,7 @@ strong {
 figure {
   img {
     max-width: 100%;
+    object-fit: cover;
   }
 }
 
@@ -267,7 +301,6 @@ section {
     background-size: 280px;
     padding-top: 220px;
   }
-
 }
 
 .about {
@@ -324,7 +357,6 @@ section {
       min-width: 100%;
       text-align: center;
     }
-
   }
 
   @media screen and (max-width: 600px) {
@@ -388,7 +420,6 @@ section {
   .prom {
     background-position: -430px -270px;
   }
-
 }
 
 .features {
@@ -436,7 +467,6 @@ section {
     }
 
     &:first-of-type {
-
       &::before {
         top: 0;
       }
@@ -497,7 +527,7 @@ section {
 }
 
 .mobile-menu {
-  display: none;
+  display: block;
   background-color: $color-white;
   width: 300px;
   border-style: solid;
@@ -509,10 +539,6 @@ section {
   padding: 20px 0;
   transition: all ease 0.2s;
   overflow: hidden;
-
-  @media screen and (max-width: 600px) {
-    display: block;
-  }
 
   a {
     text-decoration: none;
@@ -532,7 +558,6 @@ section {
     width: 100%;
     padding: 20px;
   }
-
 }
 
 .logo {
@@ -579,18 +604,17 @@ input {
   position: relative;
   width: 188px;
 
-  &:focus~label {
+  &:focus ~ label {
     opacity: 0;
   }
 }
 
 label {
-  width: 160px;
+  width: 187px;
   position: relative;
   opacity: 1;
-  margin-left: -188px;
+  margin-left: -187px;
   transition: all ease 0.2s;
-  padding: 0 20px 0 0;
 
   span {
     color: $color-title;
@@ -651,6 +675,7 @@ button {
     }
 
     .mid {
+      left: -18px;
       width: 0;
     }
 
