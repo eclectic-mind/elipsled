@@ -633,6 +633,12 @@ section {
   overflow: hidden;
 }
 
+@media screen and (min-width: 800px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
 .mobile-menu a {
   text-decoration: none;
   color: #616161;

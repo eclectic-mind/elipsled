@@ -540,6 +540,10 @@ section {
   transition: all ease 0.2s;
   overflow: hidden;
 
+  @media screen and (min-width: 800px) {
+    display: none;
+  }
+
   a {
     text-decoration: none;
     color: $color-text;
